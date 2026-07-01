@@ -6,7 +6,9 @@ import com.spring.mongidb.documents.Customer;
 import com.spring.mongidb.repository.Customer_Repo;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
+@Service
 @RequiredArgsConstructor
 public class CustomerService implements CustomerServ {
     private final Customer_Repo customerRepository;
