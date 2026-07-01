@@ -1,11 +1,14 @@
 package com.spring.mongidb.DTOs;
 
 import com.spring.mongidb.documents.Address;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CustomerResponseDTO {
     private String id;
     private String name;
